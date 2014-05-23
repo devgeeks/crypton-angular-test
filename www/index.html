@@ -7,27 +7,28 @@
     <link rel="stylesheet" type="text/css" href="components/ionicons/css/ionicons.css" />
     <link rel="stylesheet" type="text/css" href="css/Source_Sans_Pro/stylesheet.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script type="text/javascript" src="components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="components/angular-touch/angular-touch.min.js"></script>
+    <script type="text/javascript" src="components/angular-route/angular-route.min.js"></script>
     <title>notemindr</title>
   </head>
-  <body ng-controller="BeerCompanyListController">
+  <body ng-controller="NotesListAllController">
     <div class="app">
       <!--<div class="menu">-->
         <!--<div class="title">Menu</div>-->
       <!--</div>-->
       <div id="container">
         <div class="nav" ng-controller="NavBarController">
-          <!--<button class="left hamburger ion-navicon-round" ng-click="toggleMenu()"></button>-->
-          <div class="title">notemindr <small>home</small></div>    
-          <button class="right more ion-more" ng-click="moreMenu()"></button>             
+          <!--<a class="left hamburger ion-navicon-round" ng-click="toggleMenu()"></a>-->
+          <div class="title">notemindr <small>all</small></div>    
+          <a class="right more ion-android-more" ng-click="moreMenu()"></a>             
         </div>
         <div class="pages">
           <div ng-view></div>
         </div>
       </div>
     </div>
-    <script type="text/javascript" src="components/angular/angular.min.js"></script>
-    <script type="text/javascript" src="components/angular-touch/angular-touch.min.js"></script>
-    <script type="text/javascript" src="components/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/crypton.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/notemindr.js"></script>
   </body>
