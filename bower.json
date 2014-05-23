@@ -1,0 +1,33 @@
+{
+  "name": "notemindr",
+  "version": "0.0.1",
+  "authors": [
+    "Tommy-Carlos Williams <tommy@devgeeks.org>"
+  ],
+  "description": "take notes and add reminders to them",
+  "main": "www/index.html",
+  "keywords": [
+    "cordova",
+    "angular",
+    "crypton",
+    "privacy",
+    "mobile"
+  ],
+  "license": "GPLv3",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.16",
+    "angular-route": "~1.2.16",
+    "angular-touch": "~1.2.16",
+    "ionicons": "~1.4.1",
+    "underscore": "~1.6.0",
+    "moment": "~2.6.0"
+  }
+}

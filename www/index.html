@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="notemindr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <link rel="stylesheet" type="text/css" href="components/ionicons/css/ionicons.css" />
+    <link rel="stylesheet" type="text/css" href="css/Source_Sans_Pro/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>notemindr</title>
+  </head>
+  <body ng-controller="BeerCompanyListController">
+    <div class="app">
+      <!--<div class="menu">-->
+        <!--<div class="title">Menu</div>-->
+      <!--</div>-->
+      <div id="container">
+        <div class="nav" ng-controller="NavBarController">
+          <!--<button class="left hamburger ion-navicon-round" ng-click="toggleMenu()"></button>-->
+          <div class="title">notemindr <small>beer</small></div>    
+          <button class="right more ion-more" ng-click="moreMenu()"></button>             
+        </div>
+        <div class="pages">
+          <div ng-view></div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="components/angular-touch/angular-touch.min.js"></script>
+    <script type="text/javascript" src="components/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/notemindr.js"></script>
+  </body>
+  </html>
