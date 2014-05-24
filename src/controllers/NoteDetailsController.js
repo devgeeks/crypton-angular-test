@@ -6,4 +6,6 @@ window.app.controller('NoteDetailsController',
   "use strict";
 
   $scope.id = $routeParams.id;
+
+  window.console.log("note details screen loaded (id="+$scope.id+")...");
 });

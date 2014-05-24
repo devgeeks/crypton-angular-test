@@ -24,10 +24,10 @@
   ],
   "dependencies": {
     "angular": "~1.2.16",
-    "angular-route": "~1.2.16",
     "angular-touch": "~1.2.16",
     "ionicons": "~1.4.1",
     "underscore": "~1.6.0",
-    "moment": "~2.6.0"
+    "moment": "~2.6.0",
+    "angular-ui-router": "~0.2.10"
   }
 }

@@ -14,5 +14,7 @@ if (navigator.userAgent.match(/(iPad|iPhone);.*CPU.*OS 7_\d/i)) {
     .css({"top":"20px"});
 }
 
-var app = window.angular.module('notemindr', ['ngRoute', 'ngTouch']);
+
+var app = window.angular.module('notemindr',
+    ['ui.router', 'ngTouch']);
 

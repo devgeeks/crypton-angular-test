@@ -9,10 +9,10 @@
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <script type="text/javascript" src="components/angular/angular.min.js"></script>
     <script type="text/javascript" src="components/angular-touch/angular-touch.min.js"></script>
-    <script type="text/javascript" src="components/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="components/angular-ui-router/angular-ui-router.min.js"></script>
     <title>notemindr</title>
   </head>
-  <body ng-controller="NotesListAllController">
+  <body>
     <div class="app">
       <!--<div class="menu">-->
         <!--<div class="title">Menu</div>-->
@@ -21,10 +21,10 @@
         <div class="nav" ng-controller="NavBarController">
           <!--<a class="left hamburger ion-navicon-round" ng-click="toggleMenu()"></a>-->
           <div class="title">notemindr <small>all</small></div>    
-          <a class="right more ion-android-more" ng-click="moreMenu()"></a>             
+          <!--<a class="right more ion-android-more" ng-click="moreMenu()"></a>             -->
         </div>
         <div class="pages">
-          <div ng-view></div>
+          <div ui-view></div>
         </div>
       </div>
     </div>

@@ -13,4 +13,6 @@ window.app.controller('NotesListAllController',
     window.console.log("This is supposed to display ID: " + id);
   };
 
+  window.console.log("notes list screen loaded...");
+
 });

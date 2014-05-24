@@ -19,9 +19,9 @@ module.exports = function(grunt) {
       dist: {
         src: [
           'src/*.js',
-          'src/routers/*.js',
           'src/services/*.js',
-          'src/controllers/*.js'
+          'src/controllers/*.js',
+          'src/routers/*.js'
         ],
         dest: 'www/js/<%= pkg.name %>.js'
       }
@@ -42,7 +42,7 @@ module.exports = function(grunt) {
           {expand: true, flatten: true, src: ['bower_components/moment/moment.js'], dest: 'www/components/moment/'},
           {expand: true, flatten: true, src: ['bower_components/underscore/underscore*.js'], dest: 'www/components/underscore/'},
           {expand: true, flatten: true, src: ['bower_components/angular/angular*.js','bower_components/angular/angular*.map' ], dest: 'www/components/angular/'},
-          {expand: true, flatten: true, src: ['bower_components/angular-route/angular-route*.js','bower_components/angular-route/angular-route*.map' ], dest: 'www/components/angular-route/'},
+          {expand: true, flatten: true, src: ['bower_components/angular-ui-router/release/angular-ui-router*.js'], dest: 'www/components/angular-ui-router/'},
           {expand: true, flatten: true, src: ['bower_components/angular-touch/angular-touch*.js','bower_components/angular-touch/angular-touch*.map' ], dest: 'www/components/angular-touch/'}
         ]
       }
